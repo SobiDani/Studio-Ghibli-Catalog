@@ -1,0 +1,15 @@
+<div class="space"></div>
+<section class="movies">
+    <figure *ngFor="let movie of moviesList" >
+        <div class="imagen">
+        <img src="{{movie.image}}" alt="{{movie.title2}}">
+    </div>
+    <div class="text">
+        <h3>{{movie.title}}</h3>
+        <h4>{{movie.title2}}</h4>
+        <p>{{movie.year}}</p>
+        <p>{{movie.description}}</p>
+        <p>{{movie.director}}</p>
+    </div>
+    </figure>
+</section>
